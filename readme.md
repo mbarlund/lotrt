@@ -45,7 +45,8 @@ $storage_api = 'https://lotrt.free.beeceptor.com/results'
 ```
 ### Useage
 
-The Trivia object can be instantiated with an existing user or game ID. If none are provided new IDs will be generated for each and stored in SESSION. 
+The Trivia object can be instantiated with an existing user or game ID. If none are provided new IDs will be generated for each and stored in session. 
+The session keys are `$_SESSION['lotrt_user']` for the user ID and `$_SESSION['lotrt_game']` for the game ID.
 ```php
 $trivia = new \LOTRT\Trivia($_SESSION['lotrt_user'], $_SESSION['lotrt_game'])
 ```
