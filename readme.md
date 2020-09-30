@@ -19,23 +19,26 @@ Point a browser to the installation directory: http://yoursite.com/lotrt/
 
 ## Documentation
 
-This game makes use of The One API found at [https://the-one-api.dev/](https://the-one-api.dev/). All Quotes and Character information was provided thanks to them.
+This game makes use of The One API found at [https://the-one-api.dev/](https://the-one-api.dev/). All Quote and Character information was provided thanks to them.
 
 ### Options
 
 The `Trivia.php` class contains a few properties that can alter the challenge and let you control where the results get stored.
 
 **Number of questions:**
+
 Change the number of questions the trivia quiz displays.
 ```php
 $number_of_questions = 5
 ```
 **Number of answer options:**
+
 Change the number of answers the player has to choose from.
 ```php
 $number_of_answer_options = 3
 ```
 **Storage API endpoint**
+
 Change the API endpoint where you want the results to be sent (see below)
 ```php
 $storage_api = 'https://lotrt.free.beeceptor.com/results'
@@ -48,6 +51,7 @@ $trivia = new \LOTRT\Trivia($_SESSION['lotrt_user'], $_SESSION['lotrt_game'])
 ```
 
 **Start a new game**
+
 To start a new game simply call the `startGame()` method:
 ```php
 $trivia->startGame()
@@ -67,6 +71,7 @@ This will generate an array of questions containing the quote and answer options
 ```
 
 **Checking the results**
+
 To see how the player did you need to send the results to the `getResults()` method
 ```php
 $trivia->getResults($results)
@@ -95,4 +100,5 @@ The `getResults()` method response:
 ```
 
 **Storing the results**
+
 The `getResults()` method will invoke the `storeResults()` method which sends the `$results` data (see above) to an API endpoint.
