@@ -503,7 +503,7 @@ class Trivia
                     $response['message'] = 'Victory after all, I suppose! Well, it seems a very gloomy business.';
                     break;
                 case 4:
-                    $response['message'] = 'There is some good in this world, and it’s worth fighting for.';
+                    $response['message'] = 'There is some good in this world, and it\'s worth fighting for.';
                     break;
                 default:
                     $response['message'] = 'Even the smallest person can change the course of the future.';
