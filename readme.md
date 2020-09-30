@@ -102,4 +102,4 @@ The `getResults()` method response:
 
 **Storing the results**
 
-The `getResults()` method will invoke the `storeResults()` method which sends the response data from `getResults()` (see above) to an API endpoint.
+The `getResults()` method will invoke the `storeResults()` method which sends the response data from `getResults()` (see above) to the API endpoint found in the `$storage_api` property.
